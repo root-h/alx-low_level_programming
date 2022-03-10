@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Short description, single line
- * @parameterx: Description of parameter x
+ * Description of parameter x
 (* a blank line
  * Description: Longer description of the function)?
 (* section header: Section description)*
@@ -9,6 +9,6 @@
  */
 int main(void)
 	{
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art, ");
 	return (0);
 	}
