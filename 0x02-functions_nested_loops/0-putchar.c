@@ -10,9 +10,9 @@ int main(void)
 char x[] = {'_', 'p', 'u', 't', 'c', 'h',
 	    'a', 'r'};
 int d = 0;
-while (y[d] != '\0')
+while (x[d] != '\0')
 {
-_putchar(y[d]);
+_putchar(x[d]);
 
 d++;
 }
