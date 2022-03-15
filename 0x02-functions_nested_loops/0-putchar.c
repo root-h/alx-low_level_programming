@@ -1,21 +1,22 @@
 #include "main.h"
-#include <stdio.h>
+
+/**
+ * main - Putchar
+ *
+ * _putchar print the characters given
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-/**
- * main - prints the string "_putchar"
- * Returns: 0 on success.
- */
-char y[] = {'_', 'p', 'u', 't', 'c', 'h',
-	    'a', 'r'};
-int h = 0;
-while (y[h] != '\0')
-{
-_putchar(y[h]);
-
-h++;
-}
-_putchar('\n');
-return (0);
+	putchar('');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
