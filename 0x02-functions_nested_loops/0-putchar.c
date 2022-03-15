@@ -1,9 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-/* Write C code here*/
+/**
+ * main - prints the string "_putchar" 
+ * Returns: 0 on success.
+ */
 puts("_putchar");
 return (0);
 }
