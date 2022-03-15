@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-main()
+int main()
 {
 /* Write C code here*/
 puts("_putchar");
