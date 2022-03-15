@@ -4,7 +4,7 @@
 int main(void)
 {
 /**
- * main - prints the string "_putchar" 
+ * main - prints the string "_putchar"
  * Returns: 0 on success.
  */
 puts("_putchar");
