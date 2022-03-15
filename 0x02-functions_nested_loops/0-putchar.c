@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    /* Write C code here*/
-    puts("_putchar");
-    return (0);
+/* Write C code here*/
+puts("_putchar");
+return (0);
 }
