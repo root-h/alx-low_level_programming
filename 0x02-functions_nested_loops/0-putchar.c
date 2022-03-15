@@ -7,14 +7,14 @@ int main(void)
  * main - prints the string "_putchar"
  * Returns: 0 on success.
  */
-char x[] = {'_', 'p', 'u', 't', 'c', 'h',
+char y[] = {'_', 'p', 'u', 't', 'c', 'h',
 	    'a', 'r'};
-int d = 0;
-while (x[d] != '\0')
+int h = 0;
+while (y[h] != '\0')
 {
-_putchar(x[d]);
+_putchar(y[h]);
 
-d++;
+h++;
 }
 _putchar('\n');
 return (0);
