@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  *_isupper - check if a character is an
  *uppercase in English alphabet
- * Return: 1 if it is uppercase letter , 0 if it not
+ *Return: 1 if it is uppercase letter , 0 if it not
  *@c : character to test
  */
 int _isupper(int c)
