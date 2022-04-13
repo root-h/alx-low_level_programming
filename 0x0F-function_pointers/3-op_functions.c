@@ -1,33 +1,61 @@
 #include "3-calc.h"
 
 /**
- * get_op_func - selects the correct function using a given string
- * @s: operator passed as argument to the program
+ * op_add - adds 2 integers
+ * @a: 1st integer
+ * @b: 2nd integer
  *
- * Return: a pointer to the function that corresponds to s. Otherwise NULL
+ * Return: result of (a + b)
  */
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
+	return (a + b);
+}
 
-	int i;
+/**
+ * op_sub - subtracts 2 integers
+ * @a: 1st integer
+ * @b: 2nd integer
+ *
+ * Return: result of (a - b)
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
 
-	i = 0;
+/**
+ * op_mul - multiplies 2 integers
+ * @a: 1st integer
+ * @b: 2nd integer
+ *
+ * Return: result of (a * b)
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
 
-	while (ops[i].op)
-	{
-		if (s[0] == ops[i].op[0] && s[1] == '\0')
-			return (ops[i].f);
+/**
+ * op_div - divides 2 integers
+ * @a: 1st integer
+ * @b: 2nd integer
+ *
+ * Return: result of (a / b)
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
 
-		i++;
-	}
-
-	return (NULL);
+/**
+ * op_mod - finds modulo of 2 integers
+ * @a: 1st integer
+ * @b: 2nd integer
+ *
+ * Return: result of (a % b)
+ */
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
