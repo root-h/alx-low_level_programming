@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
-  * get_endianness - fills memory with a constant byte
-  * Return: 0 if endian
-  */
-
+ * get_endianness - Checks the endianness.
+ *
+ * Return: If big-endian - 0.
+ *         If little-endian - 1.
+ */
 int get_endianness(void)
 {
-	int num = 258;
-	char *kno = (char *) &num;
+	int num = 1;
+	char *endian = (char *)&num;
 
-	if (*(kno + 2) > *(kno + 3))
-		return (0);
-	return (1);
+	if (*endian == 1)
+		return (1);
+
+	return (0);
 }
