@@ -1,15 +1,16 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
-  * get_endianness - returning processor endianness
-  * Return: 0 if big endian, 1 if little endian
+  * get_endianness - fills memory with a constant byte
+  * Return: 0 if endian
   */
+
 int get_endianness(void)
 {
-	int i;
-	char *test;
+	int num = 258;
+	char *kno = (char *) &num;
 
-	i = 1;
-	test = (char *)&i;
-	return ((int)test[0]);
+	if (*(kno + 2) > *(kno + 3))
+		return (0);
+	return (1);
 }
