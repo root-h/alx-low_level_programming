@@ -1,48 +1,25 @@
 #include "main.h"
 
-unsigned int _strlen(const char *str);
-
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: a string of 0 and 1 chars
+ * binary_to_uint - converts a binary number to unsigned int
+ * @b: string containing the binary number
  *
- * Return: the converted number. Otherwise 0
+ * Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int length, i, num;
+	int i;
+	unsigned int dec_val = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	length = _strlen(b);
-
-	for (i = 0, num = 0; i < length; i++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-
-		num += (b[i] - '0') * (1 << (length - i - 1));
+		dec_val = 2 * dec_val + (b[i] - '0');
 	}
 
-	return (num);
-}
-
-/**
- * _strlen - finds the lengthof a given string
- * @str: string
- *
- * Return: the length of str
- */
-unsigned int _strlen(const char *str)
-{
-	unsigned int length = 0;
-
-	while (*str)
-	{
-		length++;
-		str++;
-	}
-
-	return (length);
+	return (dec_val);
 }
